@@ -1,0 +1,7 @@
+Homepage on mobile
+	http://testapp.galenframework.com/	500x768
+	check galenpratice.gspec --iclude mobile
+
+Homepage on desktop
+	http://testapp.galenframework.com/	1024x768
+	check galenpratice.gspec --iclude desktop
