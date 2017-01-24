@@ -1,9 +1,12 @@
 
-@@ parameterized
+@@ set domain testapp.galenframework.com
+
+@@ table myDevices
     | deviceName | tags      | size     |
     | Mobile     | mobile    | 320x600  |
-    | Tablet     | tablet    | 640x480  |
     | Desktop    | desktop   | 1024x800 |
+
+@@ parameterized using myDevices
 Homepage on ${deviceName} device
-    http://testapp.galenframework.com/ ${size}
+    http://${domain}/ ${size}
         check galenpractice.gspec --include "${tags}"

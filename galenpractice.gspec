@@ -7,16 +7,16 @@
 
 = Header =
 	header:
-		height ~69 px
-
 		@on desktop
+			height ~69 px
 			centered horizontally inside screen
 
 		@on mobile
+			height ~109 px
 			inside screen 0px left right
 
 	header.logo:
-		inside header 0 px left, 8 to 15 px top bottom
+		inside header 0 px left, 8 to 50 px top bottom
 		width 48 px
 		height 48 px
 
@@ -31,8 +31,13 @@
 
 = Menu =
 	menu:
-		below header 1 px
 		aligned vertically all header
+
+		@on desktop
+			below header 1 px
+
+		@on mobile
+			below header 0 px
 
 	menu.item-*:
 		width > 30 px
