@@ -1,0 +1,287 @@
+{
+  "testId" : "2-homepage-on-desktop-device",
+  "name" : "Homepage on Desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://testapp.galenframework.com/ 1024x800",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check galenpractice.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: galenpractice.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1485262954226,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header",
+            "place" : {
+              "filePath" : "galenpractice.gspec",
+              "lineNumber" : 8
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 11
+                },
+                "name" : "height ~69 px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "header.logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "inside header 0 px left, 8 to 50 px top bottom",
+                "highlight" : [ "header.logo", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "width 48 px",
+                "highlight" : [ "header.logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "height 48 px",
+                "highlight" : [ "header.logo" ]
+              } ]
+            }, {
+              "name" : "header.caption",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "right-of header.logo ~22 px",
+                "highlight" : [ "header.caption", "header.logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "text is \"Sample Website for Galen Framework\"",
+                "highlight" : [ "header.caption" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Menu",
+            "place" : {
+              "filePath" : "galenpractice.gspec",
+              "lineNumber" : 32
+            },
+            "objects" : [ {
+              "name" : "menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "aligned vertically all header",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 37
+                },
+                "name" : "below header 1 px",
+                "highlight" : [ "menu", "header" ]
+              } ]
+            }, {
+              "name" : "menu.item-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "width > 30 px",
+                "highlight" : [ "menu.item-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "height ~64 px",
+                "highlight" : [ "menu.item-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "inside menu 0 px left top",
+                "highlight" : [ "menu.item-1", "menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "left-of menu.item-2 0 px",
+                "highlight" : [ "menu.item-1", "menu.item-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "aligned horizontally all menu.item-2",
+                "highlight" : [ "menu.item-1", "menu.item-2" ]
+              } ]
+            }, {
+              "name" : "menu.item-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "width > 30 px",
+                "highlight" : [ "menu.item-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "height ~64 px",
+                "highlight" : [ "menu.item-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "left-of menu.item-3 0 px",
+                "highlight" : [ "menu.item-2", "menu.item-3" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "aligned horizontally all menu.item-3",
+                "highlight" : [ "menu.item-2", "menu.item-3" ]
+              } ]
+            }, {
+              "name" : "menu.item-3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "width > 30 px",
+                "highlight" : [ "menu.item-3" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "height ~64 px",
+                "highlight" : [ "menu.item-3" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "left-of menu.item-4 0 px",
+                "highlight" : [ "menu.item-3", "menu.item-4" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "aligned horizontally all menu.item-4",
+                "highlight" : [ "menu.item-3", "menu.item-4" ]
+              } ]
+            }, {
+              "name" : "menu.item-4",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "width > 30 px",
+                "highlight" : [ "menu.item-4" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "galenpractice.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "height ~64 px",
+                "highlight" : [ "menu.item-4" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "menu.item-3" : {
+              "area" : [ 274, 70, 100, 64 ]
+            },
+            "menu.item-4" : {
+              "area" : [ 374, 70, 100, 64 ]
+            },
+            "header.logo" : {
+              "area" : [ 62, 13, 48, 48 ]
+            },
+            "header" : {
+              "area" : [ 62, 0, 900, 69 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1024, 734 ]
+            },
+            "header.caption" : {
+              "area" : [ 132, 20, 628, 39 ]
+            },
+            "menu" : {
+              "area" : [ 62, 70, 900, 64 ]
+            },
+            "menu.item-1" : {
+              "area" : [ 62, 70, 100, 64 ]
+            },
+            "menu.item-2" : {
+              "area" : [ 162, 70, 112, 64 ]
+            }
+          },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1485262953106,
+        "type" : "node"
+      } ],
+      "time" : 1485262947861,
+      "type" : "node"
+    } ]
+  }
+}

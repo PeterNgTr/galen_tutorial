@@ -1,0 +1,142 @@
+{
+  "testId" : "4-my-notes-page-on-desktop-device",
+  "name" : "My notes page on Desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://testapp.galenframework.com/ 1024x800",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "run login.js",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Click loginBtn on Welcome Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: .button-login",
+            "type" : "text"
+          } ],
+          "time" : 1485262966215,
+          "type" : "node"
+        }, {
+          "name" : "Type \"testuser@example.com\" to username on Login Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: input[name='login.username']",
+            "type" : "text"
+          } ],
+          "time" : 1485262966335,
+          "type" : "node"
+        }, {
+          "name" : "Type \"test123\" to password on Login Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: input[name='login.password']",
+            "type" : "text"
+          } ],
+          "time" : 1485262966382,
+          "type" : "node"
+        }, {
+          "name" : "Click submit on Login Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: .button-login",
+            "type" : "text"
+          } ],
+          "time" : 1485262966406,
+          "type" : "node"
+        } ],
+        "time" : 1485262966183,
+        "type" : "node"
+      }, {
+        "name" : "check mynotes.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: mynotes.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1485262966863,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header",
+            "place" : {
+              "filePath" : "mynotes.gspec",
+              "lineNumber" : 7
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mynotes.gspec",
+                  "lineNumber" : 9
+                },
+                "name" : "text is \"My Notes\"",
+                "highlight" : [ "header" ]
+              } ]
+            } ]
+          }, {
+            "name" : "ListGroup",
+            "place" : {
+              "filePath" : "mynotes.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "list-group",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mynotes.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "below header ~10 px",
+                "highlight" : [ "list-group", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mynotes.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "above add-note-button ~19 px",
+                "highlight" : [ "list-group", "add-note-button" ]
+              } ]
+            }, {
+              "name" : "list-group.item-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mynotes.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "above list-group.item-2 -1 px",
+                "highlight" : [ "list-group.item-1", "list-group.item-2" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "list-group.item-2" : {
+              "area" : [ 82, 281, 860, 65 ]
+            },
+            "list-group" : {
+              "area" : [ 82, 217, 860, 129 ]
+            },
+            "list-group.item-1" : {
+              "area" : [ 82, 217, 860, 65 ]
+            },
+            "header" : {
+              "area" : [ 82, 174, 860, 33 ]
+            },
+            "add-note-button" : {
+              "area" : [ 82, 366, 107, 45 ]
+            }
+          },
+          "screenshot" : "layout-4-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1485262966433,
+        "type" : "node"
+      } ],
+      "time" : 1485262960713,
+      "type" : "node"
+    } ]
+  }
+}

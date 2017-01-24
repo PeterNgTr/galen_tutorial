@@ -10,3 +10,9 @@
 Homepage on ${deviceName} device
     http://${domain}/ ${size}
         check galenpractice.gspec --include "${tags}"
+
+@@ parameterized using myDevices
+My notes page on ${deviceName} device
+	http://${domain}/ ${size}
+		run login.js
+		check mynotes.gspec --include "${tags}"

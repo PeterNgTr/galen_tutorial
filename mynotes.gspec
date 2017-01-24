@@ -1,0 +1,20 @@
+@objects
+	header			#my-notes-page h2
+	list-group		.list-group
+		item-*		a
+	add-note-button	.btn.btn-lg.btn-primary
+
+= Header =
+	header:
+		text is "My Notes"
+
+= ListGroup =
+	list-group:
+
+		@on desktop
+			below header ~10 px
+			above add-note-button ~19 px
+
+	@forEach [list-group.item-*] as item, next as nextItem
+		${item}:
+			above ${nextItem} -1 px

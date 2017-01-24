@@ -1,0 +1,59 @@
+{
+  "tests" : [ {
+    "name" : "Homepage on Mobile device",
+    "startedAt" : 1485262940596,
+    "endedAt" : 1485262947860,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 26,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 26
+    },
+    "testId" : "1-homepage-on-mobile-device",
+    "failed" : false,
+    "duration" : 7264
+  }, {
+    "name" : "Homepage on Desktop device",
+    "startedAt" : 1485262947861,
+    "endedAt" : 1485262954338,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 24,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 24
+    },
+    "testId" : "2-homepage-on-desktop-device",
+    "failed" : false,
+    "duration" : 6477
+  }, {
+    "name" : "My notes page on Mobile device",
+    "startedAt" : 1485262954338,
+    "endedAt" : 1485262960713,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 6,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 6
+    },
+    "testId" : "3-my-notes-page-on-mobile-device",
+    "failed" : false,
+    "duration" : 6375
+  }, {
+    "name" : "My notes page on Desktop device",
+    "startedAt" : 1485262960713,
+    "endedAt" : 1485262966969,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 8,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 8
+    },
+    "testId" : "4-my-notes-page-on-desktop-device",
+    "failed" : false,
+    "duration" : 6256
+  } ]
+}

@@ -1,0 +1,117 @@
+{
+  "testId" : "3-my-notes-page-on-mobile-device",
+  "name" : "My notes page on Mobile device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://testapp.galenframework.com/ 320x600",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "run login.js",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Click loginBtn on Welcome Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: .button-login",
+            "type" : "text"
+          } ],
+          "time" : 1485262960166,
+          "type" : "node"
+        }, {
+          "name" : "Type \"testuser@example.com\" to username on Login Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: input[name='login.username']",
+            "type" : "text"
+          } ],
+          "time" : 1485262960284,
+          "type" : "node"
+        }, {
+          "name" : "Type \"test123\" to password on Login Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: input[name='login.password']",
+            "type" : "text"
+          } ],
+          "time" : 1485262960340,
+          "type" : "node"
+        }, {
+          "name" : "Click submit on Login Page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: .button-login",
+            "type" : "text"
+          } ],
+          "time" : 1485262960364,
+          "type" : "node"
+        } ],
+        "time" : 1485262960122,
+        "type" : "node"
+      }, {
+        "name" : "check mynotes.gspec --include \"mobile\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: mynotes.gspec included tags: mobile",
+          "status" : "info",
+          "time" : 1485262960610,
+          "includedTags" : [ "mobile" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header",
+            "place" : {
+              "filePath" : "mynotes.gspec",
+              "lineNumber" : 7
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mynotes.gspec",
+                  "lineNumber" : 9
+                },
+                "name" : "text is \"My Notes\"",
+                "highlight" : [ "header" ]
+              } ]
+            } ]
+          }, {
+            "name" : "ListGroup",
+            "place" : {
+              "filePath" : "mynotes.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "list-group.item-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mynotes.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "above list-group.item-2 -1 px",
+                "highlight" : [ "list-group.item-1", "list-group.item-2" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "list-group.item-2" : {
+              "area" : [ 20, 384, 295, 83 ]
+            },
+            "list-group.item-1" : {
+              "area" : [ 20, 320, 295, 65 ]
+            },
+            "header" : {
+              "area" : [ 20, 277, 295, 33 ]
+            }
+          },
+          "screenshot" : "layout-3-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1485262960388,
+        "type" : "node"
+      } ],
+      "time" : 1485262954339,
+      "type" : "node"
+    } ]
+  }
+}
